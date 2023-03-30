@@ -1,0 +1,307 @@
+/* Styles go here */
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: gray;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 64px;
+  align-items: center;
+  background-color: white;
+}
+
+header img {
+  height: 32px;
+  padding-left: 24px;
+}
+
+nav {
+  text-align: right;
+  padding-right: 24px;
+  flex-grow: 1;
+  width: 100%;
+}
+
+nav span {
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.button {
+  background-color: dimgray;
+  font-weight: bold;
+  width: 60%;
+  margin: 0;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  padding: 96px 24px;
+  width: 100%;
+  margin: auto;
+  background-color: silver;
+}
+
+
+/*first block*/
+
+#Learn {
+  display: flex;
+  height: 450px;
+  width: 60%;
+  align-items: center;
+}
+
+.main img {
+  max-width: 100%;
+  margin: 24px;
+  border-radius: 0;
+  padding-left: 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: dimgray;
+  padding: 24px;
+  text-align: left;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: dimegray;
+}
+
+.button {
+  font-size: 22px;
+  padding: 16px;
+  background-color: dimgray;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.secondary {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.secondary img {
+  max-width: 100%;
+  margin: 24px;
+  border-radius: 0;
+  padding-left: 24px;
+}
+
+#Practice {
+  display: flex;
+  height: 450px;
+  width: 60%;
+  align-items: center;
+}
+
+h2,
+h4,
+h5 {
+  text-align: left;
+}
+
+.campus {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.campus-sidebar img {
+  height: auto;
+  max-height: 180px;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.campus-sidebar {
+  display: flex;
+}
+
+.sidebar-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: left;
+  justify-content: center;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.learning-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: silver;
+}
+
+.class-options {
+  display: flex;
+  background-color: silver;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.class {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: .4rem;
+  color: dimgray;
+  margin: 1rem 2rem;
+  transition: border 270ms ease-in;
+  width: 25%;
+  text-align: left;
+}
+
+.class img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+section {
+  position: relative;
+  top: 4.2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  width: 60%;
+}
+
+video {
+  width: 470px;
+  height: 260px;
+}
+
+section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+section p {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.thesis-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40%;
+}
+
+.thesis-contenet {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.thesis-content img {
+  width: 35%;
+  height: auto;
+  margin: .5rem;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  background-color: gray;
+}
+
+.end {
+  color: white;
+  font-size: 1.2rem;
+  padding: .5rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .desktop, .content, footer {
+    display: none;
+  }
+  
+  .main, .secondary, .thesis, .learning-container, .class-options, .flex, .class {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .class {
+    width: 65%;
+  }
+
+.learning-container {
+  text-align: center;
+}
+
+ .main, .secondary, .campus, .flex {
+  align-items: center;
+}
+
+}
